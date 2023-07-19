@@ -7,10 +7,9 @@
     "jsx": "react",
     "allowJs": true,
     "allowSyntheticDefaultImports": true,
-    "moduleResolution": "Node",
     "lib": ["es6", "dom"],
     "noImplicitThis": true,
-    "strictNullChecks": true
-
-  }
+    "strictNullChecks": true,
+    "moduleResolution": "node"
+  },
 }

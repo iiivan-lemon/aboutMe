@@ -1,0 +1,43 @@
+@use '../../assets/styles/mixins' as mixin
+@use '../../assets/styles/vars' as var
+main
+  padding-inline: mixin.rem(var.$base-page-margin)
+.main-title
+  display: grid
+  padding-block: mixin.rem(var.$base-page-margin)
+  justify-items: start
+  grid-template-rows: 1fr 3fr
+  .name
+    font-size: 30px
+  .job
+    font-size: 55px
+
+
+
+.project-block
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  margin-block: mixin.rem(var.$base-margin-betw-widget)
+  .project-title
+    margin: mixin.rem(var.$base-margin-betw-text) mixin.rem(var.$base-margin-betw-text) mixin.rem(var.$base-margin-betw-text) mixin.rem(var.$base-title-left-margin)
+  .image-widget
+    border-radius: 12px
+    width: 100%
+    height: 100%
+  .description
+    margin-inline-start: mixin.rem(var.$base-title-left-margin)
+    margin-block: mixin.rem(var.$base-margin-betw-text)
+    width: 60%
+  .sub-title
+    display: inline-flex
+    justify-content: space-between
+    width: 100%
+    span:first-child
+      margin: mixin.rem(var.$base-margin-betw-text) mixin.rem(var.$base-margin-betw-text) mixin.rem(var.$base-margin-betw-text) mixin.rem(var.$base-title-left-margin)
+    span:last-child
+      margin: mixin.rem(var.$base-margin-betw-text) mixin.rem(var.$base-title-left-margin) mixin.rem(var.$base-margin-betw-text) mixin.rem(var.$base-margin-betw-text)
+  .addition-btn
+    margin-inline-start: mixin.rem(var.$base-title-left-margin)
+  .addition
+    visibility: hidden

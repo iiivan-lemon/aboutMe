@@ -2,12 +2,12 @@ import {AppBar, Toolbar, Typography} from "@mui/material";
 import Button from "@mui/material/Button";
 import React from "react";
 import {Link} from "react-router-dom";
-// import styles from 'Header.module.css'
+import './Header.sass'
 function Header() {
   return (
     <AppBar position="static" >
-      <Toolbar>
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+      <Toolbar id='header'>
+        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }} >
           <Link to='/'>ivan safronov</Link>
         </Typography>
         <Button color="inherit"><Link to='/projects'>проекты</Link></Button>
