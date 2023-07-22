@@ -1,0 +1,9 @@
+@use '../../assets/styles/mixins' as mixin
+@use '../../assets/styles/vars' as var
+
+.tags-row
+  width: 100%
+  display: flex
+  justify-content: center
+  column-gap: mixin.rem(var.$tags-distance)
+  margin-bottom: mixin.rem(var.$tags-rows-distance)
