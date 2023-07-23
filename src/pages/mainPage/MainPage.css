@@ -15,44 +15,4 @@ main {
   font-size: 55px;
 }
 
-.project-block {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  margin-block: 3.125rem;
-}
-.project-block .project-image {
-  align-self: center;
-}
-.project-block .project-title {
-  margin: 1.375rem 1.375rem 1.375rem 1.875rem;
-}
-.project-block .image-widget {
-  border-radius: 12px;
-  width: 100%;
-  height: 100%;
-}
-.project-block .description {
-  margin-inline-start: 1.875rem;
-  margin-block: 1.375rem;
-  width: 60%;
-}
-.project-block .sub-title {
-  display: inline-flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.project-block .sub-title span:first-child {
-  margin: 1.375rem 1.375rem 1.375rem 1.875rem;
-}
-.project-block .sub-title span:last-child {
-  margin: 1.375rem 1.875rem 1.375rem 1.375rem;
-}
-.project-block .addition-btn {
-  margin-inline-start: 1.875rem;
-}
-.project-block .addition {
-  visibility: hidden;
-}
-
 /*# sourceMappingURL=MainPage.css.map */

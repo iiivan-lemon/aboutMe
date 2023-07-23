@@ -47,7 +47,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|svg|jpg|gif)$/,
+        test: /\.(png|svg|jpg|gif|webp)$/,
         loader: 'file-loader',
         options: {
           name: 'public/static/[name].[ext]'
