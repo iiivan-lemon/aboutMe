@@ -47,11 +47,24 @@ module.exports = {
         ],
       },
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(png|svg|jpg|gif)$/,
         loader: 'file-loader',
         options: {
-          name: 'public/images/[name].[ext]'
+          name: 'public/static/[name].[ext]'
         }
+      },
+      {
+        test: /\.(pdf)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'pdfs/',
+              publicPath: 'pdfs/',
+            },
+          },
+        ],
       }
     ],
   },
