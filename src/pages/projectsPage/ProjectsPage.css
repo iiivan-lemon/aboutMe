@@ -1,0 +1,9 @@
+.tags-row {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  column-gap: 3.125rem;
+  margin-bottom: 1.25rem;
+}
+
+/*# sourceMappingURL=ProjectsPage.css.map */
