@@ -18,6 +18,8 @@ function ProjectsPage(){
     { title: 'Movie Space', subTitle: 'Сервис-видеостриминг', year: '2022', description: 'Веб-сервис для просмотра фильмов и сериалов онлайн', addition: 'Фронтенд написан на чистом TS, pug, SASS', content: [main2, img3,img4], links: {figma: 'https://www.figma.com/file/eQOdv9H0PdMUCkNejzHr9g/VK-%D0%A4%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B?type=design&node-id=7%3A62&mode=design&t=4Zj6ZnYkXjx9avE9-1' , github: 'https://github.com/iiivan-lemon/2022_1_KURAGA_TEAM'} }
   ]
 
+  const [curProject, setProject] = React.useState<projectData | null>(null)
+
   return (
     <main>
       <div className='main-title'>
@@ -25,9 +27,12 @@ function ProjectsPage(){
       <span className='job'>Проекты</span>
     </div>
       <div className='tags-row'><span>frontend</span><span>UI/UX</span><span>C++</span></div>
-      <div className='tags-row'><button className='call'>job-roadmap</button><button className='call'>movie-space</button></div>
+      <div className='tags-row'>
+        {
+        projects.map(data => <button className='call' onClick={()=>setProject(data)}>{data.title}</button>)
+      }</div>
       {projects.map((data, i)=>
-        <Project data={data} key={i} />
+        <Project data={data} key={i} style={{ display: (curProject?.title === data.title) ? 'block' : 'none'}} />
       )}
     </main>
   )

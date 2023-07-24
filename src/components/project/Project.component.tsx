@@ -1,16 +1,15 @@
-import logo from "../../../public/static/man.jpg";
-import React, {Component} from "react";
+import React from "react";
 import './Project.sass'
 import {projectData} from "../../types/types";
 import {Link} from "react-router-dom";
 
-function Project({data}: { data: projectData }) {
+function Project({data, style}: { data: projectData, style?: {} }) {
 
   const [showAddition, setShowAddition] = React.useState(false)
 
 
   return (
-    <div className='project-block'>
+    <div className='project-block' style={style}>
       <span className='project-title'>{data.title}</span>
       {data.content.map(file =>
         <div className='project-image'><img src={file} className='image-widget'/></div>)

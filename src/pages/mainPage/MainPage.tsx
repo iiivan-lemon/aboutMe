@@ -6,7 +6,6 @@ import Project from "../../components/project/Project.component";
 import { projectData } from '../../types/types'
 import {Link} from "react-router-dom";
 
-
 const projects: projectData[] = [
   { title: 'Job-Roadmap', subTitle: 'Веб-сервис по аналитике требований по it специальностям', year: '2023', description: 'Сервис для помощи молодым it специалистам понять и изучить ' +
       'что требуют работодатели по их профилю ' +

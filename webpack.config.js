@@ -3,10 +3,11 @@ const path = require('path');
 
 module.exports = {
   entry: './index.tsx',
-  mode: 'development',
+  mode: "development",
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'index_bundle.js',
+    publicPath: "/"
   },
   target: 'web',
   devServer: {
@@ -48,10 +49,11 @@ module.exports = {
       },
       {
         test: /\.(png|svg|jpg|gif|webp)$/,
-        loader: 'file-loader',
-        options: {
-          name: 'public/static/[name].[ext]'
-        }
+        type: 'asset/resource'
+        // loader: 'file-loader',
+        // options: {
+        //   name: '[name].[ext]'
+        // }
       },
       {
         test: /\.(pdf)$/,
