@@ -1,3 +1,3 @@
 # aboutMe
 ## deploy:
-https://jocular-crepe-2a1a31.netlify.app/
+[обо мне](https://relaxed-sherbet-13397c.netlify.app/)https://relaxed-sherbet-13397c.netlify.app/
