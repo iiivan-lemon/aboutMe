@@ -24,6 +24,7 @@ main
     font-weight: 700
     line-height: normal
 .main-btn
+  cursor: pointer
   border-radius: 70px
   border: 1px solid color.$main-text
   background: #FFF
@@ -31,6 +32,11 @@ main
   text-decoration: none
   color: color.$main-text
   font-size: mixin.rem(var.$base-text-size)
+  transition: background-color 0.5s ease
+  &.unselect
+    background: transparent
+  &.select
+    background: #FFF
 
 
 

@@ -26,6 +26,7 @@ main {
 }
 
 .main-btn {
+  cursor: pointer;
   border-radius: 70px;
   border: 1px solid #000;
   background: #FFF;
@@ -33,6 +34,13 @@ main {
   text-decoration: none;
   color: #000;
   font-size: 0.9375rem;
+  transition: background-color 0.5s ease;
+}
+.main-btn.unselect {
+  background: transparent;
+}
+.main-btn.select {
+  background: #FFF;
 }
 
 /*# sourceMappingURL=MainPage.css.map */
