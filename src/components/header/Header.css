@@ -1,5 +1,53 @@
+#navbar {
+  background-color: transparent;
+  border: 0;
+  box-shadow: none;
+}
+
 #header {
   padding-inline: 6.25rem;
+  background-color: transparent;
+  border: 0;
+}
+#header .title-name {
+  color: #667280;
+  text-decoration: 0;
+  font-family: "Inter", serif;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+#header .title-header {
+  color: #0F0F0F;
+  font-family: "Inter", serif;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+#header .title-header.page {
+  letter-spacing: 0;
+  text-transform: none;
+  background-color: transparent;
+  text-decoration: 0;
+}
+#header .title-header.page:hover {
+  background-color: transparent;
+}
+#header .title-header.email {
+  background-color: transparent;
+  border-radius: 0;
+  border-bottom: solid 1px;
+  border-bottom-color: #667280;
+  transition: border-bottom-color 1s ease;
+}
+#header .title-header.email:hover {
+  background-color: transparent;
+  border-bottom-color: #0F0F0F;
+}
+#header .icon-header {
+  margin-inline: 1rem;
 }
 
 /*# sourceMappingURL=Header.css.map */

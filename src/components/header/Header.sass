@@ -1,4 +1,45 @@
 @use '../../assets/styles/mixins' as mixin
 @use '../../assets/styles/vars' as var
+@use '../../assets/styles/colors' as color
+#navbar
+  background-color: transparent
+  border: 0
+  box-shadow: none
 #header
   padding-inline: mixin.rem(var.$base-page-margin)
+  background-color: transparent
+  border: 0
+  .title-name
+    color: color.$title-header
+    text-decoration: 0
+    font-family: "Inter", serif
+    font-size: mixin.rem(var.$title-header-size)
+    font-style: normal
+    font-weight: 600
+    line-height: normal
+  .title-header
+    color: color.$base-text
+    font-family: "Inter", serif
+    font-size: mixin.rem(var.$base-text-size)
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    &.page
+      letter-spacing: 0
+      text-transform: none
+      background-color: transparent
+      text-decoration: 0
+    &.page:hover
+      background-color: transparent
+    &.email
+      background-color: transparent
+      border-radius: 0
+      border-bottom: solid 1px
+      border-bottom-color: color.$title-header
+      transition: border-bottom-color 1s ease
+    &.email:hover
+      background-color: transparent
+      border-bottom-color: color.$base-text
+  .icon-header
+    margin-inline: 1rem
+

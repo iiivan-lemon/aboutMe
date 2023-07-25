@@ -9,10 +9,38 @@ main {
   grid-template-rows: 1fr 3fr;
 }
 .main-title .name {
-  font-size: 30px;
+  color: #000;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  font-size: 1.875rem;
 }
 .main-title .job {
-  font-size: 55px;
+  font-size: 3.4375rem;
+  color: #000;
+  font-family: "Inter", serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.main-btn {
+  cursor: pointer;
+  border-radius: 70px;
+  border: 1px solid #000;
+  background: #FFF;
+  padding: 14px 46px;
+  text-decoration: none;
+  color: #000;
+  font-size: 0.9375rem;
+  transition: background-color 0.5s ease;
+}
+.main-btn.unselect {
+  background: transparent;
+}
+.main-btn.select {
+  background: #FFF;
 }
 
 /*# sourceMappingURL=MainPage.css.map */

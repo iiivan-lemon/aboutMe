@@ -20,7 +20,7 @@ function MainPage(){
       <div className='main-title'>
         <span className='name'>Иван Сафронов</span>
         <span className='job'>Frontend разработчик</span>
-        <Link to='https://t.me/ivanlemon'>связаться</Link>
+        <Link to='https://t.me/ivanlemon' className='main-btn'>связаться</Link>
       </div>
         {projects.map((data, i)=>
           <Project data={data} key={i} />

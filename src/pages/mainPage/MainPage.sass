@@ -1,5 +1,7 @@
 @use '../../assets/styles/mixins' as mixin
 @use '../../assets/styles/vars' as var
+@use '../../assets/styles/colors' as color
+
 main
   padding-inline: mixin.rem(var.$base-page-margin)
 .main-title
@@ -8,9 +10,33 @@ main
   justify-items: start
   grid-template-rows: 1fr 3fr
   .name
-    font-size: 30px
+    color: color.$main-text
+    font-family: 'Inter', serif
+    font-style: normal
+    font-weight: 300
+    line-height: normal
+    font-size: mixin.rem(var.$sub-main-title-size)
   .job
-    font-size: 55px
+    font-size: mixin.rem(var.$main-title-size)
+    color: color.$main-text
+    font-family: 'Inter', serif
+    font-style: normal
+    font-weight: 700
+    line-height: normal
+.main-btn
+  cursor: pointer
+  border-radius: 70px
+  border: 1px solid color.$main-text
+  background: #FFF
+  padding: 14px 46px
+  text-decoration: none
+  color: color.$main-text
+  font-size: mixin.rem(var.$base-text-size)
+  transition: background-color 0.5s ease
+  &.unselect
+    background: transparent
+  &.select
+    background: #FFF
 
 
 
