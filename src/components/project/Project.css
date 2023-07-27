@@ -69,6 +69,7 @@
   width: 20px;
 }
 .project-block .addition {
+  white-space: pre-line;
   margin-inline-start: 1.875rem;
   margin-block: 1.375rem;
   width: 60%;
