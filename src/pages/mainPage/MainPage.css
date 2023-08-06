@@ -34,13 +34,16 @@ main {
   text-decoration: none;
   color: #000;
   font-size: 0.9375rem;
-  transition: background-color 0.5s ease;
+  transition: background-color 1s ease;
 }
 .main-btn.unselect {
   background: transparent;
 }
 .main-btn.select {
   background: #FFF;
+}
+.main-btn:hover {
+  background-color: #cecece;
 }
 
 /*# sourceMappingURL=MainPage.css.map */

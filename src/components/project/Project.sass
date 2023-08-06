@@ -70,3 +70,21 @@
     margin-block: mixin.rem(var.$base-margin-betw-text)
     column-gap: 1rem
     display: inline-flex
+
+.alert-appear-active
+  opacity: 0
+.alert-enter 
+  opacity: 0
+
+.alert-enter-active 
+  opacity: 1
+  transition: opacity 300ms
+
+.alert-exit 
+  opacity: 1
+
+.alert-exit-active 
+  opacity: 0
+  transition: opacity 300ms
+
+    

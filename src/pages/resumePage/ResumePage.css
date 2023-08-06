@@ -1,11 +1,3 @@
-.tags-row {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  column-gap: 3.125rem;
-  margin-bottom: 1.25rem;
-}
-
 .alert-enter {
   opacity: 0;
 }
@@ -24,4 +16,4 @@
   transition: opacity 300ms;
 }
 
-/*# sourceMappingURL=ProjectsPage.css.map */
+/*# sourceMappingURL=ResumePage.css.map */

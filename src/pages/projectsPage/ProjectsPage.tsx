@@ -68,8 +68,8 @@ function ProjectsPage() {
       }
     }
   ]
-
-  const [curProject, setProject] = React.useState<projectData | null>(projects[0])
+  const nodeRef = React.useRef(null);
+  const [curProject, setProject] = React.useState(projects[0])
 
   return (
     <main>
@@ -86,7 +86,7 @@ function ProjectsPage() {
                     onClick={() => setProject(data)}>{data.title}</button>)
         }</div>
       {projects.map((data, i) =>
-        <Project data={data} key={i} style={{display: (curProject?.title === data.title) ? 'flex' : 'none'}}/>
+        <Project ref={nodeRef} data={data} key={i} style={{display: (curProject?.title === data.title) ? 'flex' : 'none'}}/>
       )}
     </main>
   )
