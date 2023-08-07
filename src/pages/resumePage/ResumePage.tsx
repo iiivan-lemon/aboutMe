@@ -8,6 +8,7 @@ function ResumePage() {
     setShowResume(true)
   }, [nodeRef])
 
+  myFile.onLoad
   return (
     <main>
       <div className='main-title'>
@@ -25,7 +26,12 @@ function ResumePage() {
         onEnter={()=>{setShowResume(true)}}
         onExited={()=>{setShowResume(false)}}
         >
-        <object ref={nodeRef} width="100%" height="1000" data={myFile} type="application/pdf"  style={{background: 'transparent url(AnimatedLoading.gif) no-repeat center;'}}/>
+        <div style={{background: 'transparent url(AnimatedLoading.gif) no-repeat center'}}>
+          <object ref={nodeRef} width="100%" height="1000" data={myFile} type="application/pdf">
+            <param value="aaa.pdf" name="src"/>
+            <param value="transparent" name="wmode"/>
+          </object>
+        </div>
       </CSSTransition>
     </main>
   )

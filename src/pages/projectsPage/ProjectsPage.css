@@ -24,4 +24,23 @@
   transition: opacity 300ms;
 }
 
+.hard span {
+  text-decoration: underline;
+}
+
+.skills-enter {
+  filter: blur(10px);
+}
+.skills-enter-active {
+  filter: blur(0px);
+}
+.skills-exit {
+  filter: blur(10px);
+  transition: filter 300ms;
+}
+.skills-exit-acvite {
+  filter: blur(10px);
+  transition: filter 300ms;
+}
+
 /*# sourceMappingURL=ProjectsPage.css.map */

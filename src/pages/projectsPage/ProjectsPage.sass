@@ -21,3 +21,18 @@
 .alert-exit-active
   opacity: 0
   transition: opacity 300ms
+
+.hard
+  span
+    text-decoration: underline
+.skills
+  &-enter
+    filter: blur(10px)
+    &-active
+      filter: blur(0px)
+  &-exit
+    filter: blur(10px)
+    transition: filter 300ms
+    &-acvite
+      filter: blur(10px)
+      transition: filter 300ms

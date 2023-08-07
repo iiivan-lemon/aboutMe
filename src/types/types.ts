@@ -5,5 +5,6 @@ export interface projectData {
   description: string,
   addition: string,
   content: string[],
-  links?: {figma: string, github: string}
+  links?: {figma: string, github: string},
+  hardSkills: string[]
 }
