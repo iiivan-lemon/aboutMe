@@ -24,6 +24,8 @@
     font-style: normal
     font-weight: 400
     line-height: normal
+    &:hover
+      color: white
     &.page
       letter-spacing: 0
       text-transform: none
@@ -34,7 +36,6 @@
     &.email
       background-color: transparent
       border-radius: 0
-      border-bottom: solid 1px
       border-bottom-color: color.$title-header
       transition: border-bottom-color 1s ease
     &.email:hover
@@ -42,4 +43,34 @@
       border-bottom-color: color.$base-text
   .icon-header
     margin-inline: 1rem
+    transition: transform 0.3s
+    -webkit-backface-visibility: hidden
+    -webkit-transform: translateZ(0) scale(1.0, 1.0)
+    transform: translateZ(0)
+    &:hover
+      transform: scale(1.1)
 
+.Link 
+  position: relative
+  text-decoration: none
+  display: inline-block
+  color: black
+  transition: color ease 0.3s
+
+
+.Link::after 
+  content: ''
+  position: absolute
+  z-index: -1
+  width: 100%
+  height: 1%
+  left: 0
+  bottom: 0
+  background: linear-gradient(120deg, #000000 0%, #343434 100%)
+  transition: all ease 0.3s
+
+.Link:hover 
+  color: #e7e7e7
+
+.Link:hover::after 
+  height: 100%

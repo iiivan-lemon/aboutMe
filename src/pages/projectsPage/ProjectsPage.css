@@ -6,4 +6,41 @@
   margin-bottom: 1.25rem;
 }
 
+.alert-enter {
+  opacity: 0;
+}
+
+.alert-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.alert-exit {
+  opacity: 1;
+}
+
+.alert-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+
+.hard span {
+  text-decoration: underline;
+}
+
+.skills-enter {
+  filter: blur(10px);
+}
+.skills-enter-active {
+  filter: blur(0px);
+}
+.skills-exit {
+  filter: blur(10px);
+  transition: filter 300ms;
+}
+.skills-exit-acvite {
+  filter: blur(10px);
+  transition: filter 300ms;
+}
+
 /*# sourceMappingURL=ProjectsPage.css.map */

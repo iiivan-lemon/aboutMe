@@ -3,9 +3,9 @@
   flex-direction: column;
   align-items: flex-start;
   margin-block: 3.125rem;
+  margin-bottom: 20rem;
 }
 .project-block .project-image {
-  align-self: center;
   margin-bottom: 1rem;
 }
 .project-block .project-title {
@@ -72,13 +72,35 @@
   white-space: pre-line;
   margin-inline-start: 1.875rem;
   margin-block: 1.375rem;
-  width: 60%;
+  width: 100%;
 }
 .project-block .links-row {
   margin-inline-start: 1.875rem;
   margin-block: 1.375rem;
   column-gap: 1rem;
   display: inline-flex;
+}
+
+.alert-appear-active {
+  opacity: 0;
+}
+
+.alert-enter {
+  opacity: 0;
+}
+
+.alert-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.alert-exit {
+  opacity: 1;
+}
+
+.alert-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
 }
 
 /*# sourceMappingURL=Project.css.map */
