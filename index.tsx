@@ -23,8 +23,9 @@ import main2 from "./public/static/movieSpace/mainMS.webp";
 import img3 from "./public/static/movieSpace/MS1.webp";
 import img4 from "./public/static/movieSpace/MS2.webp";
 import {projectData} from "./src/types/types";
-
-
+import videoBw from "./public/static/blockWars/videoplayback.webm"
+import main3 from "./public/static/blockWars/mainBW.png"
+import img5 from "./public/static/blockWars/BW1.png"
 const projects: projectData[] = [
   {
     title: 'Job-Roadmap',
@@ -43,6 +44,7 @@ const projects: projectData[] = [
       '- кроссбраузерное приложение\n\n' +
       'Полностью отвечал за фронтенд, UI/UX часть продукта',
     content: [main1, img1, img2],
+    video: [],
     links: {
       figma: 'https://www.figma.com/file/5zjMqDbPcupxUAUPV8cqiS/Untitled?type=design&node-id=149%3A3661&mode=design&t=4Zj6ZnYkXjx9avE9-1',
       github: 'https://github.com/start-your-project/jobRoadmap'
@@ -73,6 +75,7 @@ const projects: projectData[] = [
       '- кроссбраузерное приложение\n\n' +
       'Отвечал за фронтенд и UI/UX',
     content: [main2, img3, img4],
+    video: [],
     links: {
       figma: 'https://www.figma.com/file/eQOdv9H0PdMUCkNejzHr9g/VK-%D0%A4%D0%B8%D0%BB%D1%8C%D0%BC%D1%8B?type=design&node-id=7%3A62&mode=design&t=4Zj6ZnYkXjx9avE9-1',
       github: 'https://github.com/iiivan-lemon/2022_1_KURAGA_TEAM'
@@ -84,6 +87,27 @@ const projects: projectData[] = [
       'Figma',
       'webpack',
       'Nginx'
+    ]
+  },
+  {
+    title: 'Block Wars',
+    subTitle: 'Многопользовательская игра',
+    year: '2022',
+    description: '2D игра на 4-х человек в жанре королевской битвы',
+    addition: 'Block Wars\n' +
+      '- С++ приложение\n' +
+      '- С++ SFML boost::asio\n' +
+      '- многопользовательский режим по локальной сети\n\n' +
+      'Отвечал за фронтенд и движок игры',
+    content: [img5],
+    video: [videoBw],
+    links: {
+      github: 'https://github.com/iiivan-lemon/technopark_game'
+    },
+    hardSkills:[
+      'C++',
+      'SFML',
+      'boost::asio',
     ]
   }
 ]

@@ -18,7 +18,7 @@ function MainPage({projects}: {projects: projectData[]}) {
         <span className='job'>Frontend разработчик</span>
         <Link to='https://t.me/ivanlemon' className='main-btn'>связаться</Link>
       </div>
-      {projects.map(el => { el.content.length = 1; return el}).map((data, i) =>
+      {projects.map(el => { el.content.length = 1; if(el.video.length) el.video.length = 0; return el}).map((data, i) =>
         <Project data={data} key={i}/>
       )}
     </main>
