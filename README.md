@@ -1,6 +1,6 @@
-# Hi there, I'm [Ivan](https://bejewelled-dieffenbachia-d95178.netlify.app/)
+# Hi there, I'm [Ivan](https://chic-valkyrie-86b5b4.netlify.app/)
 ### Frontend developer
-[about me](https://bejewelled-dieffenbachia-d95178.netlify.app/)
+[about me](https://chic-valkyrie-86b5b4.netlify.app/)
 
 ## Stats:
 ![](https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=iiivan-lemon&theme=solarized_dark)
