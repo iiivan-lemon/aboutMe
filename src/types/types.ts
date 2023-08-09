@@ -1,4 +1,4 @@
-export interface projectData {
+export interface ProjectData {
   title: string,
   subTitle: string,
   year: string,

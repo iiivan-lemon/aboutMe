@@ -2,8 +2,7 @@
 body {
   overflow-y: scroll;
   font-family: "Inter", serif;
-  background-image: url("./assets/images/paper-back.webp");
-  background-size: cover;
+  background-image: linear-gradient(0deg, rgba(103, 96, 100, 0.3), rgba(103, 96, 100, 0.3)), url("./assets/images/olga-thelavart-vS3idIiYxX0-unsplash.jpg");
   padding-left: 0;
   padding-right: 0;
   padding: 0;
