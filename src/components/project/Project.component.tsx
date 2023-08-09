@@ -1,10 +1,10 @@
 import React from "react";
 import './Project.sass'
-import {projectData} from "../../types/types";
+import {ProjectData} from "../../types/types";
 import {Link} from "react-router-dom";
 import {CSSTransition} from "react-transition-group";
 
-function Project({data, style, ref}: { data: projectData, style?: {}, ref?: any }) {
+function Project({data, style, ref}: { data: ProjectData, style?: {}, ref?: any }) {
 
   const [showAddition, setShowAddition] = React.useState(false)
   const nodeRef = React.useRef(null);

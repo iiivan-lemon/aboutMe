@@ -10,6 +10,7 @@
     "lib": ["es6", "dom"],
     "noImplicitThis": true,
     "strictNullChecks": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
   },
 }
